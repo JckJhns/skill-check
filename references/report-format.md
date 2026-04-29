@@ -1,5 +1,25 @@
 # Report Format
 
+## Contents
+
+- [Report collapsing rules](#report-collapsing-rules) — always include, conditional sections, depth-specific visibility, minimal example
+- [Full section reference](#full-section-reference)
+  - [1. Header](#1-header)
+  - [2. Summary card](#2-summary-card)
+  - [3. File manifest](#3-file-manifest)
+  - [4. Test results — Passed](#4-test-results--passed)
+  - [5. Security findings](#5-security-findings)
+  - [6. Eval regression results](#6-eval-regression-results)
+  - [7. Test results — Failed](#7-test-results--failed)
+  - [8. Test results — Warnings](#8-test-results--warnings)
+  - [9. Mock files used](#9-mock-files-used)
+  - [10. Best practices review](#10-best-practices-review)
+  - [11. Improvement suggestions](#11-improvement-suggestions)
+  - [12. Depth note](#12-depth-note)
+- [Output format](#output-format)
+
+---
+
 SkillCheck reports should be clear, scannable, and actionable. The format adapts based on
 depth level and what was actually found — a Quick Check on a simple skill should be concise,
 not a 12-section skeleton full of "N/A" and "No findings."

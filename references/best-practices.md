@@ -1,5 +1,17 @@
 # Best Practices Review
 
+## Contents
+
+- [Spec Compliance](#spec-compliance) — BP-1: Name format, BP-2: Description length, BP-3: Portability fields
+- [Structure & Organization](#structure--organization) — BP-4 through BP-8: Layout, line count, progressive disclosure, references, domain variants
+- [Description Quality](#description-quality) — BP-9 through BP-11: Completeness, assertiveness, trigger placement
+- [Writing Quality](#writing-quality) — BP-12 through BP-18: Imperative form, clarity, defaults, generality, examples, gotchas
+- [Efficiency](#efficiency) — BP-19 through BP-20: Context window bloat, script bundling
+- [Completeness](#completeness) — BP-21 through BP-22: Error handling, eval set
+- [Scoring](#scoring)
+
+---
+
 This test evaluates a skill against established conventions from both the
 [Agent Skills open standard](https://agentskills.io) and the skill authoring guide.
 It's static analysis — reading files and checking patterns, no execution.

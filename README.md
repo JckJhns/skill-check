@@ -104,7 +104,7 @@ See [references/example-run.md](references/example-run.md) for a complete worked
 
 ```
 skill-check/
-├── SKILL.md                        # Main skill instructions (~175 lines)
+├── SKILL.md                        # Main skill instructions
 ├── README.md                       # This file
 ├── LICENSE                         # MIT License
 ├── CONTRIBUTING.md                 # Contribution guidelines

@@ -1,5 +1,19 @@
 # Mock File Generation
 
+## Contents
+
+- [Dependencies](#dependencies)
+- [Text-based formats](#text-based-formats) — CSV, JSON, Markdown, Plain text, HTML, XML
+- [Spreadsheet formats](#spreadsheet-formats) — Excel, TSV
+- [Document formats](#document-formats) — Word, PowerPoint, PDF
+- [Image formats](#image-formats) — PNG/JPG/WEBP/GIF, SVG
+- [Archive formats](#archive-formats) — ZIP
+- [Code files](#code-files)
+- [General approach for unlisted types](#general-approach-for-unlisted-types)
+- [Matching the skill's schema](#matching-the-skills-schema)
+
+---
+
 When testing a skill's input/output contracts, you need realistic mock files. This reference
 covers how to generate them for every file type Claude commonly works with.
 

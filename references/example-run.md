@@ -1,5 +1,14 @@
 # Example Run: Standard Check on "csv-to-chart"
 
+## Contents
+
+- [The skill under test](#the-skill-under-test)
+- [Phase 1: Discover](#phase-1-discover)
+- [Phase 2: Test](#phase-2-test) — Test plan, Execution
+- [Phase 3: Report](#phase-3-report) — Security findings, Eval regression, Failed tests, Warnings, Best practices, Mock files, Recommendations
+
+---
+
 This is a complete worked example of SkillCheck running a Standard Check on a fictional
 skill called `csv-to-chart`. The skill converts CSV data into chart images. It has a few
 issues baked in to show how SkillCheck catches and reports them.

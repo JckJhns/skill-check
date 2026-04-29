@@ -43,7 +43,7 @@ Typos, unclear instructions, stale examples, missing "why" explanations — all 
 ## Guidelines
 
 ### Keep the SKILL.md slim
-The main SKILL.md should stay under 500 lines (currently ~175). It's the orchestrator —
+The main SKILL.md should stay under 500 lines. It's the orchestrator —
 it tells the agent the flow and when to read each reference file. Detail belongs in
 `references/`.
 

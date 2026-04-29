@@ -1,5 +1,21 @@
 # Quick Check
 
+## Contents
+
+- [What to run](#what-to-run)
+  - [Static integrity tests](#static-integrity-tests) — file existence, orphans, syntax, dependencies, paths
+  - [Asset and template validation](#asset-and-template-validation) — images, documents, PDFs, fonts, templates
+  - [SKILL.md quality checks](#skillmd-quality-checks) — frontmatter, constraint consistency
+  - [Cross-reference consistency](#cross-reference-consistency) — script invocation, inter-file references
+  - [Multi-skill dependency checking](#multi-skill-dependency-checking) — detection, verification, compatibility
+  - [Security review](#security-review) — script scan, instruction security
+  - [Best practices review](#best-practices-review)
+  - [What to skip](#what-to-skip)
+- [Expected test count](#expected-test-count)
+- [Report notes](#report-notes)
+
+---
+
 The fastest path — pure static analysis, no execution. Catches structural problems, missing files,
 syntax errors, security red flags, best practice violations, and logical inconsistencies. Ideal
 for a sanity check before sharing a skill or when you just want to know if the basics are sound.
