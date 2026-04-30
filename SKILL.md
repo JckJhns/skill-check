@@ -13,6 +13,7 @@ description: >
   Do NOT use for creating or editing skills (that's skill-creator) — skill-check is purely about
   testing and reporting on existing skills.
 license: MIT
+allowed-tools: Bash Read Write
 ---
 
 # SkillCheck — Comprehensive Skill Testing
