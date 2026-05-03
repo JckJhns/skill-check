@@ -1,12 +1,13 @@
 # SkillCheck 🎲
 
 **Roll for quality. Comprehensive testing and validation for [Agent Skills](https://agentskills.io).**
-*As featured on:*
-*- [lobehub.com](https://lobehub.com/skills/jckjhns-skill-check)*
-*- [agentskill.sh](https://agentskill.sh/@jckjhns/skill-check)*
-*- [skillstore.io](https://skillstore.io/skills/jckjhns-skill-check)*
 
-Every adventurer knows you don't walk into a dungeon without checking your gear. SkillCheck does the same for Agent Skills — it audits a skill directory, understands every moving part, and generates targeted tests to verify the skill works as advertised. Cross-reference mismatches, security red flags, best practice violations, broken I/O contracts — if there's a trap, SkillCheck finds it.
+As featured on:
+- [lobehub.com](https://lobehub.com/skills/jckjhns-skill-check)
+- [agentskill.sh](https://agentskill.sh/@jckjhns/skill-check)
+- [skillstore.io](https://skillstore.io/skills/jckjhns-skill-check)
+
+Every adventurer knows you don't walk into a dungeon without checking your gear. SkillCheck does the same for Agent Skills, it audits a skill directory, understands every moving part, and generates targeted tests to verify the skill works as advertised. Cross-reference mismatches, security red flags, best practice violations, broken I/O contracts. If there's a trap, SkillCheck finds it.
 
 ## What it tests
 
