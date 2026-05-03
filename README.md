@@ -1,6 +1,10 @@
 # SkillCheck 🎲
 
 **Roll for quality. Comprehensive testing and validation for [Agent Skills](https://agentskills.io).**
+*As featured on:*
+*- [lobehub.com](https://lobehub.com/skills/jckjhns-skill-check)*
+*- [agentskill.sh](https://agentskill.sh/@jckjhns/skill-check)*
+*- [skillstore.io](https://skillstore.io/skills/jckjhns-skill-check)*
 
 Every adventurer knows you don't walk into a dungeon without checking your gear. SkillCheck does the same for Agent Skills — it audits a skill directory, understands every moving part, and generates targeted tests to verify the skill works as advertised. Cross-reference mismatches, security red flags, best practice violations, broken I/O contracts — if there's a trap, SkillCheck finds it.
 
@@ -29,24 +33,23 @@ Every adventurer knows you don't walk into a dungeon without checking your gear.
 
 ## Installation
 
-SkillCheck is an Agent Skill — it works anywhere skills are supported.
+SkillCheck is an Agent Skill — it works anywhere skills are supported. The skill itself lives in the `skill-check/` subfolder. The repo root contains only GitHub files (README, LICENSE, etc.).
 
 ### Claude.ai
 
-Upload the `skill-check` folder to your skills:
 1. Download or clone this repository
-2. Upload the `skill-check` directory as a custom skill
+2. Upload the `skill-check/` directory as a custom skill
 
 ### Claude Code
 
-Copy to your skills directory:
+Copy the skill subfolder to your skills directory:
 
 ```bash
 # Personal skills
-cp -r skill-check ~/.claude/skills/
+cp -r skill-check/ ~/.claude/skills/skill-check
 
 # Project skills
-cp -r skill-check .claude/skills/
+cp -r skill-check/ .claude/skills/skill-check
 ```
 
 Or install from a plugin marketplace if available:
@@ -57,7 +60,7 @@ Or install from a plugin marketplace if available:
 
 ### Other platforms
 
-Copy the `skill-check` folder into whatever directory your agent reads skills from. The skill follows the [Agent Skills open standard](https://agentskills.io) and should work on any compatible platform.
+Copy the `skill-check/` folder into whatever directory your agent reads skills from. The skill follows the [Agent Skills open standard](https://agentskills.io) and should work on any compatible platform.
 
 ## Usage
 
@@ -89,7 +92,7 @@ SkillCheck will locate the skill, run discovery, present a test plan, execute th
 ╚══════════════════════════════════════════╝
 ```
 
-See [references/example-run.md](references/example-run.md) for a complete worked example.
+See [skill-check/references/example-run.md](skill-check/references/example-run.md) for a complete worked example.
 
 ### The verdict scale
 
@@ -103,30 +106,31 @@ See [references/example-run.md](references/example-run.md) for a complete worked
 ## Project structure
 
 ```
-skill-check/
-├── SKILL.md                        # Main skill instructions
-├── README.md                       # This file
-├── LICENSE                         # MIT License
-├── CONTRIBUTING.md                 # Contribution guidelines
+repo-root/
+├── README.md                           # This file
+├── LICENSE                             # MIT License
+├── CONTRIBUTING.md                     # Contribution guidelines
 ├── .gitignore
-├── references/
-│   ├── quick-check.md              # Quick Check test definitions
-│   ├── standard-check.md           # Standard Check test definitions
-│   ├── deep-check.md               # Deep Check test definitions
-│   ├── best-practices.md           # 22 best practice checks (agentskills.io aligned)
-│   ├── mock-files.md               # Mock file generation for every supported type
-│   ├── report-format.md            # Report template and collapsing rules
-│   ├── eval-schema.md              # evals.json format reference
-│   ├── example-run.md              # Complete worked example (Standard Check)
-│   ├── finding-the-skill.md        # How to locate a skill when no path given
-│   └── incomplete-skills.md        # Graceful handling of half-written skills
-└── evals/
-    ├── evals.json                  # 5 test cases for SkillCheck itself
-    └── files/                      # Test fixture skills
-        ├── healthy-skill/          # Clean skill — should pass everything
-        ├── broken-skill/           # Cross-ref mismatches, missing files, contradictions
-        ├── incomplete-skill/       # Half-written with TODOs and stubs
-        └── insecure-skill/         # Security red flags (test fixture only)
+└── skill-check/                        # ← Upload/copy this folder to install
+    ├── SKILL.md                        # Main skill instructions
+    ├── references/
+    │   ├── quick-check.md              # Quick Check test definitions
+    │   ├── standard-check.md           # Standard Check test definitions
+    │   ├── deep-check.md               # Deep Check test definitions
+    │   ├── best-practices.md           # 22 best practice checks (agentskills.io aligned)
+    │   ├── mock-files.md               # Mock file generation for every supported type
+    │   ├── report-format.md            # Report template and collapsing rules
+    │   ├── eval-schema.md              # evals.json format reference
+    │   ├── example-run.md              # Complete worked example (Standard Check)
+    │   ├── finding-the-skill.md        # How to locate a skill when no path given
+    │   └── incomplete-skills.md        # Graceful handling of half-written skills
+    └── evals/
+        ├── evals.json                  # 5 test cases for SkillCheck itself
+        └── files/                      # Test fixture skills
+            ├── healthy-skill/          # Clean skill — should pass everything
+            ├── broken-skill/           # Cross-ref mismatches, missing files, contradictions
+            ├── incomplete-skill/       # Half-written with TODOs and stubs
+            └── insecure-skill/         # Security red flags (test fixture only)
 ```
 
 ## Cross-platform compatibility
